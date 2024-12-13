@@ -1,0 +1,157 @@
+
+body {
+    margin: 0;
+    font-size: 14pt;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #4E4FEB;
+    color: #F0ECE5;
+    position: sticky;
+    top: 0;
+}
+
+#titulo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#busqueda {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#busqueda * {
+    padding: 10px;
+}
+
+#userdata {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+#login:hover {
+    background-color: #6060e6;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#carrito {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+#carrito:hover {
+    background-color: #6060e6;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#navegacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 3px solid #EEEEEE;
+    position: relative;
+}
+
+#navegacion div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+}
+
+#navegacion div:hover {
+    cursor: pointer;
+}
+
+#bloqueA {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: relative;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+}
+
+#caticon {
+    margin-left: 10px;
+}
+
+#categorias {
+    padding: 5px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+.content {
+    position: absolute;
+    top: 100%; /* Colocarlo justo debajo de #menu */
+    padding: 10px;
+    display: none;
+    list-style: none;
+}
+
+ul {
+    width: 200px;
+    text-align: center;
+    margin-top: 0;
+}
+
+ul a {
+    color: #F0ECE5;
+    padding: 20px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+.content:hover {
+    display: flex;
+    flex-direction: column;
+}
+
+#bloqueA:hover .content , #bloqueA:hover {
+    display: flex;
+    flex-direction: column;
+    background-color: #6e6ee2;
+    border-radius: 10px;
+}
+
+#navegacion nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 15px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #F0ECE5;
+}
+
+p {
+    margin-left: 10px;
+}
