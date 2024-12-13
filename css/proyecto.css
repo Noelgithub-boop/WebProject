@@ -1,6 +1,5 @@
-
 body {
-    margin: 0;
+
     font-size: 14pt;
 }
 
@@ -11,12 +10,16 @@ header {
     color: #F0ECE5;
     position: sticky;
     top: 0;
+    border-radius: 10px;
+    
 }
 
 #titulo {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-radius: 10px;
+
 
 }
 
@@ -68,6 +71,7 @@ header {
     align-items: center;
     border-top: 3px solid #EEEEEE;
     position: relative;
+    border-radius:10px;
 }
 
 #navegacion div {
@@ -84,7 +88,7 @@ header {
 
 #bloqueA {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     position: relative;
 }
@@ -106,7 +110,8 @@ header {
 
 .content {
     position: absolute;
-    top: 100%; /* Colocarlo justo debajo de #menu */
+    top: 100%;
+    /* Colocarlo justo debajo de #menu */
     padding: 10px;
     display: none;
     list-style: none;
@@ -130,7 +135,8 @@ ul a {
     flex-direction: column;
 }
 
-#bloqueA:hover .content , #bloqueA:hover {
+#bloqueA:hover .content,
+#bloqueA:hover {
     display: flex;
     flex-direction: column;
     background-color: #6e6ee2;
