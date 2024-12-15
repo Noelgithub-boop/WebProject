@@ -1,17 +1,32 @@
-body {
 
+/* Paleta colores */
+.colores {
+    color: #f1fcfa;
+    color: #d1f6f0;
+    color: #a3ede3;
+    color: #6cdcd2;
+    color: #3dc4bb;
+    color: #24a8a1;
+    color: #1a8783;
+    color: #196c6a;
+    color: #195656;
+    color: #194848;
+    color: #082a2b;
+}
+
+body {
+    margin: 0;
     font-size: 14pt;
 }
 
 header {
     display: flex;
     flex-direction: column;
-    background-color: #4E4FEB;
-    color: #F0ECE5;
+    background-color: #195656;
+    color: #f1fcfa;
     position: sticky;
     top: 0;
-    border-radius: 10px;
-    
+    border-radius: 0px 0px 10px 10px;
 }
 
 #titulo {
@@ -39,6 +54,10 @@ header {
     text-align: center;
 }
 
+#userdata p {
+    margin-left: 10px;
+}
+
 #login {
     display: flex;
     align-items: center;
@@ -47,7 +66,7 @@ header {
 }
 
 #login:hover {
-    background-color: #6060e6;
+    background-color: #306e6e;
     border-radius: 30px;
     cursor: pointer;
 }
@@ -60,7 +79,7 @@ header {
 }
 
 #carrito:hover {
-    background-color: #6060e6;
+    background-color: #306e6e;
     border-radius: 30px;
     cursor: pointer;
 }
@@ -69,7 +88,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 3px solid #EEEEEE;
+    border-top: 3px solid #f1fcfa;
     position: relative;
     border-radius:10px;
 }
@@ -103,9 +122,12 @@ header {
 }
 
 #categorias {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
     padding: 5px;
     line-height: 50px;
-    margin-left: 10px;
+    margin: 5px 10px;
 }
 
 .content {
@@ -117,17 +139,21 @@ header {
     list-style: none;
 }
 
-ul {
+.content {
     width: 200px;
     text-align: center;
     margin-top: 0;
 }
 
-ul a {
-    color: #F0ECE5;
+.content a {
+    color: #f1fcfa;
     padding: 20px;
     line-height: 50px;
     text-decoration: none;
+}
+
+.content a:hover {
+    text-shadow: black 2px 2px 3px;
 }
 
 .content:hover {
@@ -135,29 +161,108 @@ ul a {
     flex-direction: column;
 }
 
-#bloqueA:hover .content,
-#bloqueA:hover {
+#bloqueA:hover .content {
     display: flex;
     flex-direction: column;
-    background-color: #6e6ee2;
-    border-radius: 10px;
+    background-color: #306e6e;
+    border-radius: 0px 0px 10px 10px;
 }
 
-#navegacion nav {
+#nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+        a {
+            position: relative;
+            display: block;
+            text-transform: uppercase;
+            margin: 15px 0;
+            padding: 10px 10px;
+            text-decoration: none;
+            color: #f1fcfa;
+            font-family: sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            transition: 600ms;
+            z-index: 1;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-top: 2px solid #f1fcfa;
+                border-bottom: 2px solid #f1fcfa;
+                transform: scaleY(2);
+                opacity: 0;
+                transition: 400ms;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 2px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #f1fcfa;
+                transform: scale(0);
+                opacity: 0;
+                transition: 400ms;
+                z-index: -1;
+            }
+            &:hover {
+                color: black;
+                &:before {
+                    transform: scaleY(1);
+                    opacity: 1;
+                }
+                &:after {
+                    transform: scaleY(1);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.g1 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #194848;
+    color: #f1fcfa;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.g1 h2 {
+    border-bottom: 3px solid #f1fcfa;
+}
+
+.info div {
+    margin-bottom: 30px;
+}
+
+.social div {
+    height: 40%;
     display: flex;
     align-items: center;
 }
 
-nav a {
-    padding: 15px;
-    line-height: 50px;
+.g1 a {
+    padding: 10px;
+    margin-right: 30px;
     text-decoration: none;
+    color: #f1fcfa;
 }
 
-nav a:visited {
-    color: #F0ECE5;
-}
-
-p {
-    margin-left: 10px;
+.g2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #195656;
+    color: #f1fcfa;
 }
