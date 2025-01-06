@@ -61,7 +61,7 @@ header {
 #login {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 0 10px;
     margin: 10px;
 }
 
@@ -74,7 +74,7 @@ header {
 #carrito {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 0 10px;
     margin: 10px;
 }
 
@@ -256,6 +256,10 @@ header {
     margin-right: 30px;
     text-decoration: none;
     color: #f1fcfa;
+}
+
+.g1 a:hover {
+    text-shadow: black 3px 3px 4px;
 }
 
 .g2 {
