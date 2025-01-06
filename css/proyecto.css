@@ -232,19 +232,56 @@ header {
     }
 }
 
+section {
+    margin-top: 50px;
+    text-align: center;
+}
+
 .categorias {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.categorias div {
-    width: 200px;
-    height: 100px;
+.categorias .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 160px;
     background-color: #24a8a1;
-    display: 10px;
     margin: 10px;
     border-radius: 10px;
+}
+
+.categorias .container:hover {
+    cursor: pointer;
+    color: white;
+    transition: all 300ms;
+}
+
+.ropa {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+}
+
+.ropa div {
+    text-align: center;
+    height: 70px;
+    background-color: #24a8a1;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 300ms;
+}
+
+.ropa div:hover {
+    cursor: pointer;
+    color: white;
+}
+
+footer {
+    margin-top: 50px;
 }
 
 .g1 {
