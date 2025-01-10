@@ -22,7 +22,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    background-color: #195656;
+    background-color:#082a2b;
     color: #f1fcfa;
     position: sticky;
     top: 0;
@@ -232,7 +232,7 @@ header {
 .g1 {
     display: flex;
     justify-content: space-evenly;
-    background-color: #194848;
+    background-color: #0a3a3b;
     color: #f1fcfa;
     border-radius: 10px 10px 0px 0px;
 }
@@ -263,6 +263,9 @@ header {
     justify-content: center;
     align-items: center;
     height: 60px;
-    background-color: #195656;
+    background-color: #082a2b ;
     color: #f1fcfa;
 }
+
+/* Carrusel */
+
