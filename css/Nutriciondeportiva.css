@@ -29,6 +29,7 @@ header {
     position: sticky;
     top: 0;
     border-radius: 0px 0px 10px 10px;
+    z-index: 1000;
 }
 
 #titulo {
@@ -372,10 +373,15 @@ footer {
 }
 .producto{
     background:linear-gradient(135deg,#f7f7f7,#eaeaea);
+/* Z-index se encarga de que  quede por debajo del HEADER que es "1000" */
+    z-index: 10;
 }
 .producto:hover{
     box-shadow: 0 8px 12px rgba(0,0,0,0.7);
-    transform:scale(1.15)
+    transform:scale(1.15);
+    cursor: pointer;
+/* Z-index se encarga de que quede por encima del resto de productos que es "10" */
+    z-index: 100;
 }
 .producto img {
     width: 100%;
@@ -387,7 +393,8 @@ footer {
     position: flex;
     top: 10px;
     left: 10px;
-    background-color: #ff5733;
+    background-color: #3dc4bb; 
+/* Color anterior #ff5733 estaba testing :) */
     color: #fff;
     font-size: 0.8em;
     padding: 5px 10px;
@@ -405,13 +412,13 @@ footer {
     margin-top: 10px;
 }
 
-.producto .precio-original {
+.producto .precio_original {
     text-decoration: line-through;
     color: #888;
     margin-right: 10px;
 }
 
-.producto .precio-descuento {
-    color: #ff5733;
+.producto .precio_descuento {
+    color: #3dc4bb;
     font-weight: bold;
 }
