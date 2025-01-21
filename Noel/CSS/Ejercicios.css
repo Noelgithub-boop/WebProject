@@ -1,4 +1,3 @@
-
 @import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap);
 
 /* Paleta colores */
@@ -237,7 +236,7 @@ section {
     text-align: center;
 }
 
-
+/* Hecho por cristino */
 
 .objetivo {
     display: flex;
@@ -261,7 +260,8 @@ section {
     width: 35%;
     cursor: pointer;
 }
-
+/* Hecho por cristino */
+/* Empieza footer */
 footer {
     margin-top: 50px;
 }
@@ -308,68 +308,8 @@ footer {
     color: #f1fcfa;
 
 }
+/* Acaba footer */
 
 
 /* Carrusel */
 
-
-.productos{
-    padding: 20px;
-    text-align: center;
-}
-.productos h2{
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-.cuadricula_productos{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-.producto{
-    border: 1px solid #ccc;
-    border-radius:8px;
-    padding:15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    background-color: #fff;
-    position:relative;
-
-}
-.producto img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.producto .descuento {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #ff5733;
-    color: #fff;
-    font-size: 0.8em;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.producto h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.producto .precio {
-    font-size: 1em;
-    margin-top: 10px;
-}
-
-.producto .precio-original {
-    text-decoration: line-through;
-    color: #888;
-    margin-right: 10px;
-}
-
-.producto .precio-descuento {
-    color: #ff5733;
-    font-weight: bold;
-}
