@@ -237,48 +237,81 @@ section {
     text-align: center;
 }
 
+/* Encabezado Nutriciondeportiva */
+.sectionPrincipalNutricion {
+    position: relative;
+    background-image: url(/img/pruebaPanaMiguel.jpg);
+    background-size:contain;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 100px 20px;
+
+}
+
+.principalNutricion h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+.principalNutricion p {
+    font-size: 1.2rem;
+
+    margin-bottom: 20px;
+
+}
+
+.botonPrin {
+    background-color: #196c6a;
+    color: white;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+.botonPrin:hover{
+    background-color: #1a8783;
+    color:white;
+    font-weight: bold;
+}
+/*Seccion principal   */
+/* Categorias NutricionDeportiva */
 .categorias {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    padding: 50px 20px;
+
 }
 
-.categorias .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
-    height: 160px;
-    background-color: #24a8a1;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-.categorias .container:hover {
-    cursor: pointer;
+.categorias .categoria {
+    background-color: #196c6a;
     color: white;
-    transition: all 300ms;
-}
-
-.ropa {
-    display: flex;
-    flex-direction: column;
-    width: 270px;
-}
-
-.ropa div {
+    padding: 20px;
     text-align: center;
-    height: 70px;
-    background-color: #24a8a1;
-    margin: 10px;
     border-radius: 10px;
-    transition: all 300ms;
+    width: 150px;
+    margin: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
 }
 
-.ropa div:hover {
-    cursor: pointer;
+.categoria h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.categoria:hover {
+    transform: scale(1.2);
+    background-color: #6cdcd2;
     color: white;
 }
+/*  */
 
 .objetivo {
     display: flex;
