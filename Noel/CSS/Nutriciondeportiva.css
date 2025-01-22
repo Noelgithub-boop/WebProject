@@ -24,7 +24,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    background-color: #195656;
+    background-color: #082a2b;
     color: #f1fcfa;
     position: sticky;
     top: 0;
@@ -93,7 +93,7 @@ header {
     align-items: center;
     border-top: 3px solid #f1fcfa;
     position: relative;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 #navegacion div {
@@ -178,6 +178,7 @@ header {
 
     li {
         list-style: none;
+
         a {
             position: relative;
             display: block;
@@ -191,6 +192,7 @@ header {
             font-weight: 700;
             transition: 600ms;
             z-index: 1;
+
             &:before {
                 content: '';
                 position: absolute;
@@ -204,6 +206,7 @@ header {
                 opacity: 0;
                 transition: 400ms;
             }
+
             &:after {
                 content: '';
                 position: absolute;
@@ -217,12 +220,15 @@ header {
                 transition: 400ms;
                 z-index: -1;
             }
+
             &:hover {
                 color: black;
+
                 &:before {
                     transform: scaleY(1);
                     opacity: 1;
                 }
+
                 &:after {
                     transform: scaleY(1);
                     opacity: 1;
@@ -240,14 +246,15 @@ section {
 /* Encabezado Nutriciondeportiva */
 .sectionPrincipalNutricion {
     position: relative;
-    background-image: url(/img/pruebaPanaMiguel.jpg);
-    background-size:contain;
+    background-image: url(/img/encabezadoNutriciondeportivaTEMPORAL.webp);
+    background-size: cover;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 100px 20px;
 
 }
 
+/* la medida ''rem'' coge el tamño de raiz del documento (root-em) */
 .principalNutricion h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -258,46 +265,55 @@ section {
 
 .principalNutricion p {
     font-size: 1.2rem;
+    font-weight: bold;
 
     margin-bottom: 20px;
 
 }
 
 .botonPrin {
-    background-color: #196c6a;
+    background-color:#24a8a1;
     color: white;
     padding: 10px 20px;
-    border:none;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
     text-transform: uppercase;
     transition: background-color 0.3s ease;
-}
-.botonPrin:hover{
-    background-color: #1a8783;
-    color:white;
     font-weight: bold;
 }
+
+.botonPrin:hover {
+    background-color: #1a8783;
+    color: white;
+    font-weight: bold;
+}
+
 /*Seccion principal   */
 /* Categorias NutricionDeportiva */
 .categorias {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding: 50px 20px;
+
 
 }
 
 .categorias .categoria {
-    background-color: #196c6a;
+    background-color: #24a8a1;
     color: white;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
-    width: 150px;
+    width: 250px;
+    height: 160px;
     margin: 10px;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    line-height: 100px;
+
 
 }
 
@@ -308,9 +324,10 @@ section {
 
 .categoria:hover {
     transform: scale(1.2);
-    background-color: #6cdcd2;
+    background-color: #3dc4bb;
     color: white;
 }
+
 /*  */
 
 .objetivo {
@@ -336,6 +353,8 @@ section {
     cursor: pointer;
 }
 
+/* Empieza el footer */
+
 footer {
     margin-top: 50px;
 }
@@ -343,7 +362,7 @@ footer {
 .g1 {
     display: flex;
     justify-content: space-evenly;
-    background-color: #194848;
+    background-color: #0a3a3b;
     color: #f1fcfa;
     border-radius: 10px 10px 0px 0px;
 }
@@ -378,44 +397,51 @@ footer {
     justify-content: center;
     align-items: center;
     height: 60px;
-    background-color: #195656;
+    background-color: #082a2b;
     color: #f1fcfa;
 }
 
-.productos{
+/* Aacaba el footer */
+.productos {
     padding: 20px;
     text-align: center;
 }
-.productos h2{
+
+.productos h2 {
     font-size: 1.8em;
     margin-bottom: 20px;
 }
-.cuadricula_productos{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+
+.cuadricula_productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
-.producto{
+
+.producto {
     border: 1px solid #ccc;
-    border-radius:10px;
-    padding:15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    position:flex;
+    position: flex;
 
 }
-.producto{
-    background:linear-gradient(135deg,#f7f7f7,#eaeaea);
-/* Z-index se encarga de que  quede por debajo del HEADER que es "1000" */
+
+.producto {
+    background: linear-gradient(135deg, #f7f7f7, #eaeaea);
+    /* Z-index se encarga de que  quede por debajo del HEADER que es "1000" */
     z-index: 10;
 }
-.producto:hover{
-    box-shadow: 0 8px 12px rgba(0,0,0,0.7);
-    transform:scale(1.15);
+
+.producto:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
+    transform: scale(1.15);
     cursor: pointer;
-/* Z-index se encarga de que quede por encima del resto de productos que es "10" */
+    /* Z-index se encarga de que quede por encima del resto de productos que es "10" */
     z-index: 100;
 }
+
 .producto img {
     width: 100%;
     height: auto;
@@ -426,8 +452,8 @@ footer {
     position: flex;
     top: 10px;
     left: 10px;
-    background-color: #3dc4bb; 
-/* Color anterior #ff5733 estaba testing :) */
+    background-color: #3dc4bb;
+    /* Color anterior #ff5733 estaba testing :) */
     color: #fff;
     font-size: 0.8em;
     padding: 5px 10px;
