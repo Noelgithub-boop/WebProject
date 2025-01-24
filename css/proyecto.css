@@ -25,7 +25,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    background-color: #195656;
+    background-color:#082a2b;
     color: #f1fcfa;
     position: sticky;
     top: 0;
@@ -236,14 +236,16 @@ section {
     margin-top: 50px;
     text-align: center;
 }
-
+/*Categorias pag principal  */
 .categorias {
     display: flex;
+    flex-wrap:wrap;
     justify-content: center;
     align-items: center;
+    padding: 50px 20px;
 }
 
-.categorias .container {
+.categorias .container  {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,8 +254,21 @@ section {
     background-color: #24a8a1;
     margin: 10px;
     border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
+.container:hover{
+    background-color: #3dc4bb;
+    transform:scale(1.1);
+}
+.container a{
+    color:white;
+    text-align:center;
+    line-height: 100px;
 
+}
 .categorias .container:hover {
     cursor: pointer;
     color: white;
@@ -266,6 +281,7 @@ section {
     width: 270px;
 }
 
+
 .ropa div {
     text-align: center;
     height: 70px;
@@ -273,8 +289,17 @@ section {
     margin: 10px;
     border-radius: 10px;
     transition: all 300ms;
+    text-transform: uppercase;
+    color:white;
 }
-
+.ropaHombre:hover{
+    background-color: #3dc4bb;
+    transform:scale(1.1);
+}
+.ropaMujer:hover{
+    background-color: #3dc4bb;
+    transform:scale(1.1);
+}
 .ropa div:hover {
     cursor: pointer;
     color: white;
@@ -288,20 +313,6 @@ section {
     gap: 10px;
 }
 
-.objetivo img {
-    width: 10%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    border: solid 3px #1a8783;
-    transition: all ease-in-out 0.5s;
-}
-
-.objetivo img:hover {
-    width: 35%;
-    cursor: pointer;
-}
-
 footer {
     margin-top: 50px;
 }
@@ -309,7 +320,7 @@ footer {
 .g1 {
     display: flex;
     justify-content: space-evenly;
-    background-color: #194848;
+    background-color: #0a3a3b;
     color: #f1fcfa;
     border-radius: 10px 10px 0px 0px;
 }
@@ -344,6 +355,13 @@ footer {
     justify-content: center;
     align-items: center;
     height: 60px;
-    background-color: #195656;
+    background-color: #082a2b ;
     color: #f1fcfa;
+
+
 }
+
+
+
+
+
