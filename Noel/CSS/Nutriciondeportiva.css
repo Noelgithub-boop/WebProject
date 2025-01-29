@@ -505,18 +505,31 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .carouselContainer {
-    width: 100%;
+    width: 80%;
+    max-width: 1200px;
+    width: 1200px;
+    max-height: 500px;
     /* cambiar bg color si lo necesito */
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 
 
+}
+#slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.5s ease-in-out;
+    transform:translateX(0);
+    
+    
 }
 
 .carruseles {
@@ -529,32 +542,44 @@ footer {
 
 /* Imagenes contenidas en el slider */
 .sliderSection {
-    /* el width calc 100%3 es para que me quepan las 3 imagenes en el contenedor */
-    width: calc(100% / 3);
     height: 100%;
+    /* el width calc 100%3 es para que me quepan las 3 imagenes en el contenedor */
+    width:100%;
+    /* para evitar que las imagenes pierdan calidad */
+    /* flex-shrink: 0; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
 }
 
 .sliderSection img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
     border-radius: 10px;
 
 }
-#slider{display:flex;}
+
+
 
 .botonizq,
 .botonder {
-    display: flex;
+    
     position: absolute;
     top: 50%;
-    font-size: 1.5rem;
+    transform:translateY(-50%);
+    font-size: 2rem;
     background-color: transparent;
-    border-radius: 50px;
-    padding: 5px;
+    /* para que sea redondo el boton */
+    border-radius: 50%;
+    padding: 10px;
     font-weight: 600;
     cursor: pointer;
-    color: #0a3a3b;
+    color: white;
     transform: translate(0, -50%);
     transition: 1s ease;
     user-select: none;
@@ -571,6 +596,6 @@ footer {
 
 .botonizq:hover,
 .botonder:hover {
-    background-color: #194848;
+    
     color: white;
 }

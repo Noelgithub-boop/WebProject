@@ -7,8 +7,7 @@ let index = 0;
 const totalSlides = sliderSections.length;
 
 function updateSlider() {
-    const translateValue = -index * 100; // Se mueve en función del índice
-    slider.style.transform = `translateX(${translateValue}%)`;
+    slider.style.transform = `translateX(-${index * 100}%)`;
 }
 
 // Botón izquierdo (retroceder)
@@ -22,3 +21,6 @@ btnRight.addEventListener("click", () => {
     index = (index === totalSlides - 1) ? 0 : index + 1;
     updateSlider();
 });
+
+// Asegurar que el slider comience en la primera imagen correctamente
+updateSlider();
