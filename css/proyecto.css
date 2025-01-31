@@ -236,6 +236,38 @@ section {
     margin-top: 50px;
     text-align: center;
 }
+
+#sesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logBox {
+    width: 750px;
+    height: 70%;
+    position: fixed;
+    background-color: #EEEEEE;
+    top: 18%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logBox label, input {
+    margin: 10px;
+    width: 200px;
+    line-height: 30px;
+}
+
+.logBox button {
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 40px;
+}
+
 /*Categorias pag principal  */
 .categorias {
     display: flex;
