@@ -19,9 +19,6 @@ body {
     margin: 0;
     font-size: 14pt;
     font-family: 'Oswald';
-
-
-
 }
 
 header {
@@ -32,7 +29,6 @@ header {
     position: sticky;
     top: 0;
     border-radius: 0px 0px 10px 10px;
-    z-index: 1000;
 }
 
 #titulo {
@@ -244,103 +240,88 @@ header {
 section {
     margin-top: 50px;
     text-align: center;
-
-
-
-}
-
-/* Encabezado Nutriciondeportiva */
-.sectionPrincipalNutricion {
-    margin:0;
-    position: relative;
-    background-image: url(/img/nutriciondeportiva.jpg);
-    background-size: cover;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 100px 20px;
-
-}
-
-/* la medida ''rem'' coge el tamño de raiz del documento (root-em) */
-.principalNutricion h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-
-}
-
-.principalNutricion p {
-    font-size: 1.2rem;
-    font-weight: bold;
-
-    margin-bottom: 20px;
-
-}
-
-.botonPrin {
-    background-color: #24a8a1;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
-    font-weight: bold;
-}
-
-.botonPrin:hover {
-    background-color: #1a8783;
-    color: white;
-    font-weight: bold;
 }
 
 
 
-/*Seccion principal   */
-/* Categorias NutricionDeportiva */
+
+
+/*Categorias pag principal  */
 .categorias {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
-
-
 }
 
-.categorias .categoria {
-    background-color: #24a8a1;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
+.categorias .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 250px;
     height: 160px;
+    background-color: #24a8a1;
     margin: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
     transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.container:hover {
+    background-color: #3dc4bb;
+    transform: scale(1.1);
+}
+
+.container a {
+    color: white;
+    text-align: center;
     line-height: 100px;
 
-
 }
 
-.categoria h3 {
-    font-size: 1.2rem;
+.categorias .container:hover {
+    cursor: pointer;
+    color: white;
+    transition: all 300ms;
+}
+
+.ropa {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+}
+
+
+.ropa div {
+    text-align: center;
+    height: 70px;
+    background-color: #24a8a1;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 300ms;
     text-transform: uppercase;
-}
-
-.categoria:hover {
-    transform: scale(1.2);
-    background-color: #3dc4bb;
     color: white;
 }
 
-/*  */
+.ropaHombre:hover {
+    background-color: #3dc4bb;
+    transform: scale(1.1);
+}
+
+.ropaMujer:hover {
+    background-color: #3dc4bb;
+    transform: scale(1.1);
+}
+
+.ropa div:hover {
+    cursor: pointer;
+    color: white;
+}
 
 
-/* Empieza el footer */
 
 footer {
     margin-top: 50px;
@@ -386,188 +367,43 @@ footer {
     height: 60px;
     background-color: #082a2b;
     color: #f1fcfa;
+
+
 }
 
-/* Aacaba el footer */
-.productos {
-    padding: 20px;
-    text-align: center;
-}
-
-.productos h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-
-.cuadricula_productos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.producto {
+    display: flex;
+    align-items: center;
     gap: 20px;
-}
-
-.producto {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    position: flex;
-
-}
-
-.producto {
-    background: linear-gradient(135deg, #f7f7f7, #eaeaea);
-    /* Z-index se encarga de que  quede por debajo del HEADER que es "1000" */
-    z-index: 10;
-}
-
-.producto:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
-    transform: scale(1.15);
-    cursor: pointer;
-    /* Z-index se encarga de que quede por encima del resto de productos que es "10" */
-    z-index: 100;
+    padding: 20px;
 }
 
 .producto img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* *{box-sizing: border-box;} */
-.producto .descuento {
-    position: flex;
-    top: 10px;
-    left: 10px;
-    background-color: #3dc4bb;
-    /* Color anterior #ff5733 estaba testing :) */
-    color: #fff;
-    font-size: 0.8em;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.producto h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.producto .precio {
-    font-size: 1em;
-    margin-top: 10px;
-}
-
-.producto .precio_original {
-    text-decoration: line-through;
-    color: #888;
-    margin-right: 10px;
-}
-
-.producto .precio_descuento {
-    color: #3dc4bb;
-    font-weight: bold;
-}
-
-/*  INICIO CAROUSEL SLIDER */
-#sectionSlider{
-    margin:50px 30px ;
-}
-
-
-.carouselContainer {
-    position: relative;
-    width: auto;
-    height: 450px;
-    margin:0 auto;
-    background-color: #e0e0e0;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
+    width: 500px;
     border-radius: 10px;
-    overflow: hidden;
-
-}
-
-.carruseles {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    transition:transform 0.5s ease-in-out;
-
-
-}
-
-.sliderSection {
-    min-width: 100%;
-    height: 100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-
-/* Imagenes contenidas en el slider */
-.sliderSection img {
-    width: 100%;
     height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    
+
 }
 
+.info-producto {
+    
+    max-width: 400px;
+    align-items:flex-end;
 
+}
 
-
-
-
-
-.botonizq,
-.botonder {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* para que sea redondo el boton */
-    border-radius: 50%;
-    padding: 5px;
-    font-weight: 600;
-    cursor: pointer;
+.btn-comprar {
+    background-color: #333;
     color: white;
-    transform: translate(0, -50%);
-    transition: 0.5s ease;
-    user-select: none;
-    border:none;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
-.botonizq {
-    left: 10px;
-
-}
-
-.botonder {
-    right: 10px;
-}
-
-.botonizq:hover,
-.botonder:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    transform: translateY(-50%) scale(1.1);
-
+.btn-comprar:hover {
+    background-color: #555;
     
-}
-
-.pulse:hover, 
-.pulse:focus {
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em transparent;
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 var(--hover); }
 }
