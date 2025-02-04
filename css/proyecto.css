@@ -58,7 +58,7 @@ header {
 }
 
 #userdata p {
-    margin-left: 10px;
+    margin: 10px 10px;
 }
 
 #login {
@@ -70,7 +70,7 @@ header {
 
 #login:hover {
     background-color: #306e6e;
-    border-radius: 30px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -83,7 +83,7 @@ header {
 
 #carrito:hover {
     background-color: #306e6e;
-    border-radius: 30px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -167,7 +167,7 @@ header {
 #bloqueA:hover .content {
     display: flex;
     flex-direction: column;
-    background-color: #f1fcfa;
+    background-color: #EEEEEE;
     border-radius: 0px 0px 10px 10px;
 }
 
