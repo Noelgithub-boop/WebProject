@@ -373,34 +373,106 @@ footer {
 
 .producto {
     display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+    gap: 40px;
+    padding: 40px;
+    max-width: 800px;
+    margin:auto;
 }
 
 .producto img {
     
-    width: 500px;
+    width:400px;
     border-radius: 10px;
     height: auto;
 
 }
-
-.info-producto {
-    
-    max-width: 400px;
-    align-items:flex-end;
+.contenedorProducto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
 
 }
+.menuCompra {
+    background-color: #f8f8f8;
+    padding:20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+}
 
+.infoProducto {
+    
+    max-width:50%;
+    
+
+}
+.infoProducto h1{
+    font-size:28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.subtitulo {
+    font-size: 16px;
+    color: #666;
+}
+
+
+.etiquetas {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.etiqueta {
+    background-color: #f3f3f3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.Descripcion {
+    margin-top: 100px;
+    max-width: 500px;
+    text-align: left;
+}
+.Descripcion h2{
+    text-align: center;
+}
+.precio {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom:15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
 .btn-comprar {
     background-color: #333;
     color: white;
-    padding: 10px 15px;
+    padding:15px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
 }
 
 .btn-comprar:hover {
