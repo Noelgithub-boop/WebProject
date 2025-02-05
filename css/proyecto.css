@@ -246,6 +246,7 @@ section {
 #logBox {
     width: 500px;
     height: 50%;
+    object-fit: fill;
     position: fixed;
     background-color: #EEEEEE;
     top: 25%;
@@ -255,6 +256,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 460px;
 }
 
 #logBox #close {
