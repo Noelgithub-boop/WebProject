@@ -406,11 +406,11 @@ footer {
     text-align: left;
 }
 
-.infoProducto {
-    
-    max-width:50%;
-    
 
+#seccionProducto{
+    display:flex;
+    flex-direction: column;
+    
 }
 .infoProducto h1{
     font-size:28px;
