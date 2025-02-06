@@ -52,13 +52,26 @@
     <main>
         <section class="producto">
             <div class="contenedorProducto">
-                <div class="imagenProducto">
-                    <img src="/img/bigshot.jpg" alt="Big Shot">
+                <div class="galeriaImagenProducto">
+                    <!-- Imagen principal -->
+                    <div class="imagenProducto">
+                        <img id="mainImage" src="/img/bigshot.jpg" alt="Big Shot">
+                    </div>
+                    <div class="imagenesComplementarias">
+                        <img src="/img/imagenComplementaria1.jpg" alt=""onclick="changeImage(this.src)">
+                        <img src="/img/imagenComplementaria2.jpg" alt=""onclick="changeImage(this.src)">
+                        <img src="/img/imagenComplementaria3.jpg" alt=""onclick="changeImage(this.src)">
+                    </div>
                 </div>
+                <script>
+                    function changeImage(src) {
+                      document.getElementById('mainImage').src = src;
+                    }
+                  </script>
                 <div id="seccionProducto">
 
                     <div class="infoProducto">
-                        <h1>Preentreno BIG SHOT</h1>
+                        <h1>BIG SHOT</h1>
                         <p class="subtitulo">Perfecto para los que quiere aumentar su rendimiento físico</p>
                         <div class="etiquetas">
                             <span class="etiqueta">Vegetariano </span>

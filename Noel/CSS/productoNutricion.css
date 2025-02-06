@@ -407,6 +407,7 @@ footer {
 }
 
 
+/* PRODUCTO (IMAGEN , PRECIO , ETC) */
 #seccionProducto{
     display:flex;
     flex-direction: column;
@@ -437,7 +438,7 @@ footer {
     font-size: 14px;
 }
 .Descripcion {
-    margin-top: 100px;
+    margin-top: 60px;
     max-width: 500px;
     text-align: left;
 }
@@ -479,3 +480,39 @@ select {
     background-color: #555;
     
 }
+
+/* MEJORANDO ESTILO PRESENTACION PRODUCTO */
+.galeriaImagenProducto{
+    display:flex;
+    gap:1rem;
+    align-items: flex-start;
+}
+.imagenProducto{
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    border:1px solid #ddd;
+    border-radius: 5px;
+}
+.imagenProducto img{
+    width: 100%;
+    height: auto;
+}
+
+.imagenesComplementarias{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+}
+
+.imagenesComplementarias img {
+    width: 130px;
+    height: auto;
+    object-fit: cover;
+    cursor:pointer;
+    border:1px solid #ddd;
+    border-radius: 5px;
+}
+
+.imagenesComplementarias img:hover{
+    transform: scale(1.10);
