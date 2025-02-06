@@ -1,4 +1,3 @@
-
 @import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap);
 
 /* Paleta colores */
@@ -25,7 +24,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    background-color:#082a2b;
+    background-color: #082a2b;
     color: #f1fcfa;
     position: sticky;
     top: 0;
@@ -58,7 +57,7 @@ header {
 }
 
 #userdata p {
-    margin: 10px 10px;
+    margin-left: 10px;
 }
 
 #login {
@@ -70,7 +69,7 @@ header {
 
 #login:hover {
     background-color: #306e6e;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
 }
 
@@ -83,7 +82,7 @@ header {
 
 #carrito:hover {
     background-color: #306e6e;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
 }
 
@@ -93,7 +92,7 @@ header {
     align-items: center;
     border-top: 3px solid #f1fcfa;
     position: relative;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 #navegacion div {
@@ -167,7 +166,7 @@ header {
 #bloqueA:hover .content {
     display: flex;
     flex-direction: column;
-    background-color: #EEEEEE;
+    background-color: #f1fcfa;
     border-radius: 0px 0px 10px 10px;
 }
 
@@ -178,6 +177,7 @@ header {
 
     li {
         list-style: none;
+
         a {
             position: relative;
             display: block;
@@ -191,6 +191,7 @@ header {
             font-weight: 700;
             transition: 600ms;
             z-index: 1;
+
             &:before {
                 content: '';
                 position: absolute;
@@ -204,6 +205,7 @@ header {
                 opacity: 0;
                 transition: 400ms;
             }
+
             &:after {
                 content: '';
                 position: absolute;
@@ -217,12 +219,15 @@ header {
                 transition: 400ms;
                 z-index: -1;
             }
+
             &:hover {
                 color: black;
+
                 &:before {
                     transform: scaleY(1);
                     opacity: 1;
                 }
+
                 &:after {
                     transform: scaleY(1);
                     opacity: 1;
@@ -237,188 +242,20 @@ section {
     text-align: center;
 }
 
-.contenedor {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: #a3ede3;
-    padding: 10px;
-}
 
-.marcoOfertas {
-    width: auto;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    
-}
 
-.listaOfertas {
-    padding: 0;
-    margin: 20px;
-}
 
-.itemOfertas {
-    list-style: none;
-}
-
-.enlaceOfertas {
-    user-select: none;
-    display: block;
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    transition: 300ms ease;
-}
-
-.enlaceOfertas:hover {
-    border-color: #24a8a1;
-}
-
-.enlaceOfertas img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.enlaceOfertas p {
-    color: white;
-    padding: 8px 16px;
-    font-weight: 500;
-    margin: 16px 0 18px;
-    background-color: #1a8783;
-    width: fit-content;
-    border-radius: 40px;
-}
-
-.enlaceOfertas h2 {
-    color: black;
-    text-align: left;
-    font-weight: 600;
-}
-
-#sesion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#logBox {
-    width: 500px;
-    height: 50%;
-    object-fit: fill;
-    position: fixed;
-    background-color: #EEEEEE;
-    top: 25%;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 460px;
-}
-
-#logBox #close {
-    display: flex;
-    justify-content: right;
-    align-items: start;
-    width: 100%;
-    height: 10%;
-}
-
-#logBox #close button {
-    border: none;
-    border-radius: 10px;
-    color: black;
-    font-size: 13pt;
-    font-weight: bold;
-    background-color: white;
-    padding: 5px 10px;
-    margin: 5px;
-}
-
-#logBox #close button:hover {
-    color: white;
-    background-color: brown;
-    cursor: pointer;
-}
-
-#logBox img {
-    margin-bottom: 40px;
-}
-
-#logBox .log {
-    display: flex;
-    flex-direction: column;
-}
-
-#logBox label, input {
-    margin: 10px;
-    width: 200px;
-    line-height: 30px;
-    text-align: left;
-}
-
-#logBox .buttons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 400px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-#logBox .buttons .register {
-    height: 40px;
-    font-weight: bold;
-    color: #082a2b;
-    border: 2px solid #082a2b;
-    border-radius: 6px;
-    padding: 5px;
-    transition: all 300ms;
-}
-
-#logBox .buttons .register:hover {
-    cursor: pointer;
-    background-color: white;
-}
-
-#logBox .buttons .logIn {
-    height: 40px;
-    font-weight: bold;
-    border: 2px solid black;
-    border-radius: 6px;
-    background-color: #082a2b;
-    color: white;
-    padding: 5px;
-    transition: all 300ms;
-}
-
-#logBox .buttons .logIn:hover {
-    background-color: white;
-    color: #082a2b;
-    border: 2px solid #082a2b;
-    cursor: pointer;
-}
 
 /*Categorias pag principal  */
 .categorias {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
 }
 
-.categorias .container  {
+.categorias .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -429,19 +266,22 @@ section {
     border-radius: 10px;
     text-decoration: none;
     text-transform: uppercase;
-    color:white;
+    color: white;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.container:hover{
+
+.container:hover {
     background-color: #3dc4bb;
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
-.container a{
-    color:white;
-    text-align:center;
+
+.container a {
+    color: white;
+    text-align: center;
     line-height: 100px;
 
 }
+
 .categorias .container:hover {
     cursor: pointer;
     color: white;
@@ -463,28 +303,25 @@ section {
     border-radius: 10px;
     transition: all 300ms;
     text-transform: uppercase;
-    color:white;
+    color: white;
 }
-.ropaHombre:hover{
+
+.ropaHombre:hover {
     background-color: #3dc4bb;
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
-.ropaMujer:hover{
+
+.ropaMujer:hover {
     background-color: #3dc4bb;
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
+
 .ropa div:hover {
     cursor: pointer;
     color: white;
 }
 
-.objetivo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 450px;
-    gap: 10px;
-}
+
 
 footer {
     margin-top: 50px;
@@ -528,13 +365,167 @@ footer {
     justify-content: center;
     align-items: center;
     height: 60px;
-    background-color: #082a2b ;
+    background-color: #082a2b;
     color: #f1fcfa;
 
 
 }
 
+.producto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+    gap: 40px;
+    padding: 40px;
+    max-width: 800px;
+    margin:0;
+}
+
+.producto img {
+    
+    width:400px;
+    border-radius: 10px;
+    height: auto;
+
+}
+.contenedorProducto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+
+}
+.menuCompra {
+    background-color: #f8f8f8;
+    padding:20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+}
 
 
+/* PRODUCTO (IMAGEN , PRECIO , ETC) */
+#seccionProducto{
+    display:flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 300px;
+    
+
+    
+}
+.infoProducto{
+    width: 100%;
+}
+.infoProducto h1{
+    font-size:28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.subtitulo {
+    font-size: 16px;
+    color: #666;
+}
 
 
+.etiquetas {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.etiqueta {
+    background-color: #f3f3f3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.Descripcion {
+    margin-top: 50px;
+    max-width: 500px;
+    text-align: left;
+    
+}
+.Descripcion h2{
+    text-align: center;
+}
+.precio {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom:15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.btn-comprar {
+    background-color: #333;
+    color: white;
+    padding:15px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn-comprar:hover {
+    background-color: #555;
+    
+}
+
+/* MEJORANDO ESTILO PRESENTACION PRODUCTO */
+.galeriaImagenProducto{
+    display:flex;
+    gap:1rem;
+    align-items: flex-start;
+}
+.imagenProducto{
+    width: 500px;
+    height: 500px;
+    overflow:hidden;
+    border-radius: 5px;
+}
+.imagenProducto img{
+    width: 100%;
+    height:auto;
+    object-fit: contain;
+}
+
+.imagenesComplementarias{
+
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:10px;
+    width: 500px;
+    height: 500px;
+    overflow: auto;
+}
+
+.imagenesComplementarias img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor:pointer;
+    border-radius: 5px;
+    transition:transform 0.3s ease;
+}
+
+.imagenesComplementarias img:hover{
+    transform: scale(1.10);}

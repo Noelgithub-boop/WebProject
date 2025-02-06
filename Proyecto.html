@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fit&Gear</title>
     <link rel="stylesheet" href="./css/proyecto.css">
     <!-- Enlace a Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -17,7 +17,7 @@
                 <button>Buscar</button>
             </div>
             <div id="userdata">
-                <div id="login">
+                <div id="login" onclick="logIn()">
                     <img src="img/login.png" alt="login" width="30px" height="auto">
                     <p>Iniciar Sesión</p>
                 </div>
@@ -86,6 +86,24 @@
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
+        <img src="img/workout.jpg" alt="" width="100%">
+        <section id="sesion">
+            <div id="logBox">
+                <div id="close">
+                    <button onclick="closeLogIn()">X</button>
+                </div>
+                <img src="img/logoFG1.png" alt="logo" width="250px" height="auto">
+                <div class="log">
+                    <label for="usuario">Nombre de Usuario</label>
+                    <input id="username" type="text" name="usuario" placeholder="Nombre de Usuario o Correo electrónico">
+                </div>
+                <div class="log">
+                    <label for="passw">Contraseña</label>
+                    <input type="password" name="passw" placeholder="Insertar contraseña">
+                </div>
+                <div class="buttons">
+                    <button class="register">Registrarse</button>
+                    <button class="logIn">Iniciar Sesión</button>
                 </div>
             </div>
         </section>
@@ -141,6 +159,8 @@
             <small>&copy;2025 <b>Fit&Gear</b> - Todos los Derechos Reservados</small>
         </div>
     </footer>
+    <!-- Enlace al documento JS -->
+    <script src="js/Proyecto.js"></script>
     <!-- Importar iconos de fontawesome -->
     <script src="https://kit.fontawesome.com/56a598464a.js" crossorigin="anonymous"></script>
     <!-- Enlace a Swiper script -->
