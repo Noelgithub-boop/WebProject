@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios</title>
+    <link rel="stylesheet" href="/css/estructuraBasica.css">
     <link rel="stylesheet" href="./CSS/Ejercicios.css">
-
 </head>
 
 <body>
     <Header>
         <!--  Barra principal -->
-
         <div id="titulo">
             <a href="Proyecto.html"><img src="/img/LogoFG.png" alt="logo" width="250px" height="auto"></a>
             <div id="busqueda">
@@ -20,7 +19,7 @@
                 <button>Buscar</button>
             </div>
             <div id="userdata">
-                <div id="login">
+                <div id="login" onclick="logIn()">
                     <img src="/img/login.png" alt="login" width="30px" height="auto">
                     <p>Iniciar Sesión</p>
                 </div>
@@ -52,24 +51,39 @@
                 <li><a href="">Ejercicios</a></li>
             </ul>
         </div>
-        <!--  Barra principal -->
     </Header>
     <main>
-
-
-
-        <!-- Hecho por cristino -->
+        <!--  Menu de logIn -->
+        <section id="sesion">
+            <div id="logBox">
+                <div id="close">
+                    <button onclick="closeLogIn()">X</button>
+                </div>
+                <img src="/img/logoFG1.png" alt="logo" width="250px" height="auto">
+                <div class="log">
+                    <label for="usuario">Nombre de Usuario</label>
+                    <input id="username" type="text" name="usuario"
+                        placeholder="Nombre de Usuario o Correo electrónico">
+                </div>
+                <div class="log">
+                    <label for="passw">Contraseña</label>
+                    <input type="password" name="passw" placeholder="Insertar contraseña">
+                </div>
+                <div class="buttons">
+                    <button class="register">Registrarse</button>
+                    <button class="logIn">Iniciar Sesión</button>
+                </div>
+            </div>
+        </section>
         <section>
             <h1>¿CUÁL ES TU OBJETIVO?</h1>
             <div class="objetivo">
                 <img src="/img/bigshot.jpg" alt="">
-                <img src="/img/pruebaPanaMiguel.jpg" alt="">
+                <img src="/img/bigshot.jpg" alt="">
                 <img src="/img/bigshot.jpg" alt="">
                 <img src="/img/bigshot.jpg" alt="">
             </div>
         </section>
-        <!-- Hecho por cristino -->
-
     </main>
     <!-- Inicio footer -->
     <footer>
@@ -100,7 +114,8 @@
         </div>
     </footer>
 
-    <!--Fin footer  -->
+    <!-- Enlace al documento JS -->
+    <script src="/js/Proyecto.js"></script>
     <!-- Importar iconos de fontawesome -->
     <script src="https://kit.fontawesome.com/56a598464a.js" crossorigin="anonymous"></script>
 </body>

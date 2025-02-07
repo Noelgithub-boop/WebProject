@@ -1,4 +1,3 @@
-
 @import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap);
 
 /* Paleta colores */
@@ -22,6 +21,8 @@ body {
     font-family: 'Oswald';
 }
 
+
+/* Header */
 header {
     display: flex;
     flex-direction: column;
@@ -30,6 +31,7 @@ header {
     position: sticky;
     top: 0;
     border-radius: 0px 0px 10px 10px;
+    z-index: 1000;
 }
 
 #titulo {
@@ -232,78 +234,13 @@ header {
     }
 }
 
+/* Espaciado entre secciones */
 section {
     margin-top: 50px;
     text-align: center;
 }
 
-.contenedor {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: #a3ede3;
-    padding: 10px;
-}
-
-.marcoOfertas {
-    width: auto;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.listaOfertas {
-    padding: 0;
-    margin: 20px;
-}
-
-.itemOfertas {
-    list-style: none;
-}
-
-.enlaceOfertas {
-    user-select: none;
-    display: block;
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    transition: 300ms ease;
-}
-
-.enlaceOfertas:hover {
-    border-color: #24a8a1;
-}
-
-.enlaceOfertas img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.enlaceOfertas p {
-    color: white;
-    padding: 8px 16px;
-    font-weight: 500;
-    margin: 16px 0 18px;
-    background-color: #1a8783;
-    width: fit-content;
-    border-radius: 40px;
-}
-
-.enlaceOfertas h2 {
-    color: black;
-    text-align: left;
-    font-weight: 600;
-}
-
+/* Menu de inicio de sesión */
 #sesion {
     display: flex;
     justify-content: center;
@@ -324,6 +261,8 @@ section {
     align-items: center;
     flex-direction: column;
     min-height: 460px;
+    /* Para que se muestre por encima del resto de elementos */
+    z-index: 1010;
 }
 
 #logBox #close {
@@ -409,83 +348,7 @@ section {
     cursor: pointer;
 }
 
-/*Categorias pag principal  */
-.categorias {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
-}
-
-.categorias .container  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
-    height: 160px;
-    background-color: #24a8a1;
-    margin: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color:white;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-.container:hover{
-    background-color: #3dc4bb;
-    transform:scale(1.1);
-}
-.container a{
-    color:white;
-    text-align:center;
-    line-height: 100px;
-
-}
-.categorias .container:hover {
-    cursor: pointer;
-    color: white;
-    transition: all 300ms;
-}
-
-.ropa {
-    display: flex;
-    flex-direction: column;
-    width: 270px;
-}
-
-
-.ropa div {
-    text-align: center;
-    height: 70px;
-    background-color: #24a8a1;
-    margin: 10px;
-    border-radius: 10px;
-    transition: all 300ms;
-    text-transform: uppercase;
-    color:white;
-}
-.ropaHombre:hover{
-    background-color: #3dc4bb;
-    transform:scale(1.1);
-}
-.ropaMujer:hover{
-    background-color: #3dc4bb;
-    transform:scale(1.1);
-}
-.ropa div:hover {
-    cursor: pointer;
-    color: white;
-}
-
-.objetivo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 450px;
-    gap: 10px;
-}
-
+/* Footer */
 footer {
     margin-top: 50px;
 }
@@ -530,11 +393,4 @@ footer {
     height: 60px;
     background-color: #082a2b ;
     color: #f1fcfa;
-
-
 }
-
-
-
-
-
