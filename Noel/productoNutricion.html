@@ -72,46 +72,49 @@
                 </div>
             </div>
         </section>
+
         <section class="producto">
-            <div class="contenedorProducto">
-                <div class="galeriaImagenProducto">
-                    <!-- Imagen principal -->
-                    <div class="imagenProducto">
-                        <img id="mainImage" src="/img/bigshot.jpg" alt="Big Shot">
-                    </div>
-                    <div class="imagenesComplementarias">
-                        <img src="/img/imagenComplementaria1.jpg" alt="" onclick="changeImage(this.src)">
-                        <img src="/img/imagenComplementaria2.jpg" alt="" onclick="changeImage(this.src)">
-                        <img src="/img/imagenComplementaria3.jpg" alt="" onclick="changeImage(this.src)">
-                        <img src="/img/bigshot.jpg" alt="" onclick="changeImage(this.src)">
-                    </div>
+            <div class="contenedorImagenes">
+                <!-- Imagen principal -->
+                <div class="imagenProducto">
+                    <img id="mainImage" src="/img/bigshot.jpg" alt="Big Shot">
                 </div>
-                <script>
-                    function changeImage(src) {
-                        document.getElementById('mainImage').src = src;
-                    }
-                </script>
-                <div id="seccionProducto">
+                <div class="imagenesComplementarias">
+                    <img src="/img/imagenComplementaria1.jpg" alt="" onclick="changeImage(this.src)">
+                    <img src="/img/imagenComplementaria2.jpg" alt="" onclick="changeImage(this.src)">
+                    <img src="/img/imagenComplementaria3.jpg" alt="" onclick="changeImage(this.src)">
+                    <img src="/img/bigshot.jpg" alt="" onclick="changeImage(this.src)">
+                </div>
+            </div>
 
-                    <div class="infoProducto">
-                        <h1>BIG SHOT</h1>
-                        <p class="subtitulo">Perfecto para los que quiere aumentar su rendimiento físico</p>
-                        <div class="etiquetas">
-                            <span class="etiqueta">Vegetariano </span>
-                            <span class="etiqueta">Vegano</span>
-                        </div>
-                        <div class="menuCompra">
-                            <p class="precio">32,99 €</p>
-                            <label for="cantidad">Cantidad:</label>
-                            <select id="cantidad">
-                                <option>250 Tabletas</option>
-                            </select>
+            <div id="seccionProducto">
 
-                            <button class="btn-comprar">Añadir al carrito</button>
-                        </div>
+                <div class="infoProducto">
+                    <h1>BIG SHOT</h1>
+                    <p class="subtitulo">Perfecto para los que quiere aumentar su rendimiento físico</p>
+                    <div class="etiquetas">
+                        <span class="etiqueta">Vegetariano </span>
+                        <span class="etiqueta">Vegano</span>
+                    </div>
+                    <div class="menuCompra">
+                        <p class="precio">32,99 €</p>
+                        <label for="cantidad">Cantidad:</label>
+                        <select id="cantidad">
+                            <option>250 Tabletas</option>
+                        </select>
+
+                        <button class="btn-comprar">Añadir al carrito</button>
                     </div>
                 </div>
             </div>
+
+        </section>
+        <script>
+            function changeImage(src) {
+                document.getElementById('mainImage').src = src;
+            }
+        </script>
+        <section id="Descripcion">
             <div class="Descripcion">
 
                 <h2>Descripcion</h2>
@@ -134,15 +137,8 @@
 
 
 
-
-
-
-
-
-            </div>
-            </div>
-
         </section>
+        
         <section class="comentarios">
             <h2>COMENTARIOS</h2>
             <p>
