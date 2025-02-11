@@ -196,18 +196,91 @@ select {
 .btn-comprar:hover {
     background-color: #555; 
 }
+.contenedorDesComm{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: start;}
 
-/* MEJORANDO ESTILO PRESENTACION PRODUCTO */
-
-
-
-
-.Descripcion {
-    margin-top: 50px;
-    max-width: 500px;
-    text-align: left;
+.descripcionProducto{
     
+    background:#24a8a1 ; 
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 600px;
+    margin:20px auto auto 165px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6; 
+    color: white; 
 }
-.Descripcion h2{
-    text-align: center;
+
+.descripcionProducto h2 {
+    text-align: left;
+    color:#6cdcd2; 
+    font-size: 24px;
+    text-transform: uppercase; 
+    margin-bottom: 15px;
+}
+
+.descripcionProducto p {
+    font-size: 16px;
+    text-align: justify; 
+}
+
+
+
+.descripcionProducto p::after {
+    content: " 💪"; 
+}
+#titulosCommentarios{
+    text-align:center;
+    margin:auto;
+    padding: 20px;
+}
+
+.comment{
+   background-color:#d1f6f0; 
+   color:#082a2b;
+   border-radius: 10px;
+   padding: 20px;
+   line-height: 1.6;
+   margin:20px auto 20px;
+   font-family: 'Arial', sans-serif; 
+   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+   max-width: 500px;
+   height: auto;
+}
+.comment h3{
+    color:#333
+    
+    
+
+ }
+ #formComentario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#formComentario input,
+#formComentario textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#formComentario button {
+    background: #24a8a1;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#formComentario button:hover {
+    background: #1c8c89;
 }
