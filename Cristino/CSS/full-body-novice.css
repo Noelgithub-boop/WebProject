@@ -1,0 +1,101 @@
+
+body {
+    background-color: #EEEEEE;
+}
+
+#Entrenamiento {
+    display: flex;
+}
+
+#ejercicios-container {
+    width: 60%;
+    margin: 5%;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#ejercicios-container #titulo {
+    background-color: #7bc5b3;
+    width: 100%;
+    max-height: 60px;
+    line-height: 60px;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 0;
+}
+
+.ejercicio {
+    text-align: left;
+    width: 90%;
+    background-color: #EEEEEE;
+    border: solid grey 1px;
+    border-radius: 10px;
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.ejercicio h1 {
+    margin: 0;
+}
+
+.ejercicio .pasos {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+}
+
+.ejercicio .pasos li {
+    padding: 10px;
+}
+
+.videos-muestra {
+    display: none;
+    margin-top: 2%;
+}
+
+.videos-muestra video {
+    width: 35%;
+    height: auto;
+    margin-left: 3%;
+    border-radius: 10px;
+}
+
+#detalles {
+    width: 25%;
+    margin: 5% 0;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: fit-content;
+}
+
+#detalles h1{
+    background-color: #7bc5b3;
+    width: 100%;
+    max-height: 60px;
+    line-height: 60px;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 0;
+}
+
+#cuerpoimg {
+    display: flex;
+}
+
+#detalles img {
+    width: 35%;
+    margin-left: 10%;
+}
+
+#detalles ul {
+    list-style: none;
+    padding: 0 40px;
+}
+
+#detalles ul li {
+    text-align: left;
+    padding: 10px;
+}

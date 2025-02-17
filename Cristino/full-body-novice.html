@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+    <link rel="stylesheet" href="/css/estructuraBasica.css">
+    <link rel="stylesheet" href="./CSS/full-body-novice.css">
+</head>
+
+<body>
+    <Header>
+        <!--  Barra principal -->
+        <div id="titulo">
+            <a href="/PaginaPrincipal.html"><img src="/img/LogoFG.png" alt="logo" width="250px" height="auto"></a>
+            <div id="busqueda">
+                <input type="search" name="buscador" id="buscador" size="50px" placeholder="Buscar producto">
+                <button>Buscar</button>
+            </div>
+            <div id="userdata">
+                <div id="login" onclick="logIn()">
+                    <img src="/img/login.png" alt="login" width="30px" height="auto">
+                    <p>Iniciar Sesión</p>
+                </div>
+                <div id="carrito">
+                    <img src="/img/carrito.png" alt="carrito" width="30px" height="auto">
+                    <p>Carrito</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="navegacion">
+            <div id="bloqueA">
+                <div id="menu">
+                    <img src="/img/categoria.png" alt="Categorías" width="20px" height="auto" id="caticon">
+                    <span id="cat">CATEGORÍAS</span>
+                </div>
+                <ul class="content">
+                    <li><a href="/Noel/Nutriciondeportiva.html">Nutrición Deportiva</a></li>
+                    <li><a href="##">Ropa Hombre</a></li>
+                    <li><a href="##">Ropa Mujer</a></li>
+                    <li><a href="##">Equipamiento</a></li>
+                    <li><a href="/Cristino/Ejercicios.html">Rutinas</a></li>
+                </ul>
+            </div>
+            <ul id="nav">
+                <li><a href="/PaginaPrincipal.html">Inicio</a></li>
+                <li><a href="">Localización</a></li>
+                <li><a href="/Cristino/Ejercicios.html">Ejercicios</a></li>
+            </ul>
+        </div>
+    </Header>
+    <main>
+        <!--  Menu de logIn -->
+        <section id="sesion">
+            <div id="logBox">
+                <div id="close">
+                    <button onclick="closeLogIn()">X</button>
+                </div>
+                <img src="/img/logoFG1.png" alt="logo" width="250px" height="auto">
+                <div class="log">
+                    <label for="usuario">Nombre de Usuario</label>
+                    <input id="username" type="text" name="usuario"
+                        placeholder="Nombre de Usuario o Correo electrónico">
+                </div>
+                <div class="log">
+                    <label for="passw">Contraseña</label>
+                    <input type="password" name="passw" placeholder="Insertar contraseña">
+                </div>
+                <div class="buttons">
+                    <button class="register">Registrarse</button>
+                    <button class="logIn">Iniciar Sesión</button>
+                </div>
+            </div>
+        </section>
+        <section id="Entrenamiento">
+            <div id="ejercicios-container">
+                <h1 id="titulo">Entrenamiento Cuerpo Completo</h1>
+                <div class="ejercicio" onclick="showStep()">
+                    <h1>1- Flexiones de Rodilla con Peso Corporal (3x10 Repeticiones)</h1>
+                    <div class="videos-muestra" id="videos1">
+                        <video autoplay loop muted>
+                            <source src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-knee-push-ups-front.mp4#t=0.1" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                        <video autoplay loop muted>
+                            <source src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-knee-push-ups-side.mp4#t=0.1" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                    </div>
+                    <ul class="pasos" id="pasos1">
+                        <li><b>Paso 1:</b> Comienza en una posición de flexiones apoyado sobre tus rodillas. Flexiona en la articulación del codo y el hombro.</li>
+                        <li><b>Paso 2:</b> Baja tu cuerpo, manteniendo los codos cerca.</li>
+                        <li><b>Paso 3:</b> Empújate hacia arriba para volver a la posición inicial.</li>
+                    </ul>
+                </div>
+                <div class="ejercicio" onclick="showStep1()">
+                    <h1>2- Puente de Glúteos (3x12 Repeticiones)</h1>
+                    <div class="videos-muestra" id="videos2">
+                        <video autoplay loop muted>
+                            <source src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-glute-bridge-side.mp4#t=0.1" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                        <video autoplay loop muted>
+                            <source src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-glute-bridge-front.mp4#t=0.1" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                    </div>
+                    <ul class="pasos" id="pasos2">
+                        <li><b>Paso 1:</b> Acuéstate con las rodillas dobladas y los pies apoyados sobre el suelo.</li>
+                        <li><b>Paso 2:</b> Empuja tus caderas hacia arriba para que tus glúteos estén elevados y tu espalda recta.</li>
+                        <li><b>Paso 3:</b> Contrae tus glúteos y eleva tus caderas hacia el techo.</li>
+                        <li><b>Paso 4:</b> Una vez que estés en el punto más alto que puedas manejar, mantén la posición durante unos segundos y luego regresa lentamente a la posición inicial.</li>
+                    </ul>
+                </div>
+                <div class="ejercicio" onclick="showStep2()">
+                    <h1>3- Sentadilla con Peso Corporal (4x12 Repeticiones)</h1>
+                    <div class="videos-muestra" id="videos3">
+                        <video autoplay loop muted>
+                            <source src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-squat-front.mp4#t=0.1" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                        <video autoplay loop muted>
+                            <source src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-squat-side.mp4#t=0.1" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                    </div>
+                    <ul class="pasos" id="pasos3">
+                        <li><b>Paso 1:</b> Ponte de pie con los pies separados al ancho de los hombros.</li>
+                        <li><b>Paso 2:</b> Dobla tus rodillas y caderas y retrocede a la posición de sentadilla mientras bajas tu cuerpo.</li>
+                        <li><b>Paso 3:</b> Continúa hasta alcanzar la profundidad completa</li>
+                        <li><b>Paso 4:</b> Regresa a la posición inicial.</li>
+                    </ul>
+                </div>
+                <div class="ejercicio" onclick="showStep3()">
+                    <h1>4- Plancha de Antebrazo (3x30 Segundos)</h1>
+                    <div class="videos-muestra" id="videos4">
+                        <video autoplay loop muted>
+                            <source src="https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-forearm-plank-front.mp4#t=0.1" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                        <video autoplay loop muted>
+                            <source src="https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-forearm-plank-side.mp4#t=0.1" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                    </div>
+                    <ul class="pasos" id="pasos4">
+                        <li><b>Paso 1:</b> Coloca los antebrazos en el suelo con tus codos doblados a un ángulo de 90° alineados debajo de tus hombros, con tus brazos en paralelo al ancho de tus hombros.</li>
+                        <li><b>Paso 2:</b> Tus pies deben estar juntos, con solo tus dedos tocando el suelo.</li>
+                        <li><b>Paso 3:</b> Levanta tu vientre del suelo y forma una línea recta desde tus talones hasta la coronilla de tu cabeza y mantén.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="detalles">
+                <h1>Detalles</h1>
+                <div>
+                    <div id="cuerpoimg">
+                        <img src="/img/cuerpoFrontal.png" alt="">
+                        <img src="/img/cuerpoespalda.png" alt="">
+                    </div>
+                    <ul>
+                        <li><b>Músculos involucrados:</b> Pectorales, Abdominales, Tríceps y Cuádriceps</li>
+                        <li><b>Dificultad:</b> Principiante</li>
+                        <li><b>Equipamiento requerido:</b> Ninguno (Peso corporal)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Inicio footer -->
+    <footer>
+        <div class="g1">
+            <div class="info">
+                <h2>Informacíon</h2>
+                <div>
+                    <a href="#">Política de Cookies</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+                <div>
+                    <a href="#">Acerca de nosotros</a>
+                    <a href="#">Contactanos</a>
+                </div>
+            </div>
+            <div class="social">
+                <h2>Redes Sociales</h2>
+                <div>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="g2">
+            <small>&copy;2025 <b>Fit&Gear</b> - Todos los Derechos Reservados</small>
+        </div>
+    </footer>
+
+    <!-- Enlace al documento JS LogIn -->
+    <script src="/js/Proyecto.js"></script>
+    <!-- Enlace al documento JS Personalizado -->
+    <script src="JS/full-body-novice.js"></script>
+    <!-- Importar iconos de fontawesome -->
+    <script src="https://kit.fontawesome.com/56a598464a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

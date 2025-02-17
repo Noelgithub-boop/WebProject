@@ -1,162 +1,182 @@
+/* Categorias como en pagina principal */
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
 
-    /* Categorias como en pagina principal */
-    .categorias {
-        display: flex;
-        flex-wrap:wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 50px 20px;
-    }
-    
-    .categorias .container  {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 250px;
-        height: 160px;
-        background-color: #24a8a1;
-        margin: 10px;
-        border-radius: 10px;
-        text-decoration: none;
-        text-transform: uppercase;
-        color:white;
-        transition: transform 0.3s ease, background-color 0.3s ease;
-    }
-    .container:hover{
-        background-color: #3dc4bb;
-        transform:scale(1.1);
-    }
-    .container a{
-        color:white;
-        text-align:center;
-        line-height: 100px;
-    
-    }
-    .categorias .container:hover {
-        cursor: pointer;
-        color: white;
-        transition: all 300ms;
-    }
-    
-    .ropa {
-        display: flex;
-        flex-direction: column;
-        width: 270px;
-    }
-    
-    
-    .ropa div {
-        text-align: center;
-        height: 70px;
-        background-color: #24a8a1;
-        margin: 10px;
-        border-radius: 10px;
-        transition: all 300ms;
-        text-transform: uppercase;
-        color:white;
-    }
-    .ropaHombre:hover{
-        background-color: #3dc4bb;
-        transform:scale(1.1);
-    }
-    .ropaMujer:hover{
-        background-color: #3dc4bb;
-        transform:scale(1.1);
-    }
-    .ropa div:hover {
-        cursor: pointer;
-        color: white;
-    }
+.categorias .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 160px;
+    background-color: #24a8a1;
+    margin: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.container:hover {
+    background-color: #3dc4bb;
+    transform: scale(1.1);
+}
+
+.container a {
+    color: white;
+    text-align: center;
+    line-height: 100px;
+
+}
+
+.categorias .container:hover {
+    cursor: pointer;
+    color: white;
+    transition: all 300ms;
+}
+
+.ropa {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+}
+
+
+.ropa div {
+    text-align: center;
+    height: 70px;
+    background-color: #24a8a1;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 300ms;
+    text-transform: uppercase;
+    color: white;
+}
+
+.ropaHombre:hover {
+    background-color: #3dc4bb;
+    transform: scale(1.1);
+}
+
+.ropaMujer:hover {
+    background-color: #3dc4bb;
+    transform: scale(1.1);
+}
+
+.ropa div:hover {
+    cursor: pointer;
+    color: white;
+}
 
 /* paginaProducto */
 .producto {
     display: flex;
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
     gap: 40px;
     padding: 40px;
-    margin:0;
+    margin: 0;
 }
 
-.contenedorImagenes{
+.contenedorImagenes {
     display: flex;
-    gap:10px;
+    gap: 10px;
 }
-#mainImage img{
+
+#mainImage img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.imagenesComplementarias{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:10px;
+.imagenesComplementarias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     width: 400px;
-    
+
 }
 
 .imagenesComplementarias img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    cursor:pointer;
+    cursor: pointer;
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
 
-.imagenesComplementarias img:hover{
-    transform:scale(1.1);
+.imagenesComplementarias img:hover {
+    transform: scale(1.1);
 }
-.imagenProducto{
+
+.imagenProducto {
     width: 400px;
     height: auto;
     border-radius: 5px;
-    
+
 }
-.imagenProducto img{
+
+.imagenProducto img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 /* PRODUCTO (IMAGEN , PRECIO , ETC) */
-#seccionProducto{
-    display:flex;
+#seccionProducto {
+    display: flex;
     flex-direction: column;
-    gap:20px;
-    width: 350px;
-
+    align-items: center;
+    gap: 20px;
+    width: 500px;
+    margin:0 50px;
     
+
+
 }
+
 .menuCompra {
-    background-color: #f8f8f8;
-    padding:20px;
+    background-color: #f9f9f9;
+    padding: 30px;
     border-radius: 10px;
     width: 100%;
-    text-align: left;
-   
-}
-.precio {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
+    box-shadow: 0 4 10px rgba(0, 0, 0, 0.3);
+    
+
 }
 
-.infoProducto h1{
-    font-size:28px;
+.precio {
+    font-size: 28px;
     font-weight: bold;
-    
+    color: #333;
+    margin-bottom: 20px;
 }
+
+.infoProducto h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color:#333;
+    margin-bottom: 10px; 
+
+}
+
 .subtitulo {
-    font-size: 16px;
+    font-size: 18px;
     color: #666;
+    margin-bottom: 15px;
 }
 
 .etiquetas {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+<<<<<<< HEAD
     margin:10px auto 25px 30px;
 }
 
@@ -167,6 +187,18 @@
     border-radius: 10px;
     font-size: 14px;
     
+=======
+    margin-bottom: 15px;
+}
+
+.etiqueta {
+    background-color:#e8f5f4 ;
+    color:#24a8a1;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+>>>>>>> 1f2b9f56c8346eb12a757fae0f30d706637a3beb
 }
 
 
@@ -175,115 +207,231 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color:#333;
+
 }
 
-select {
+.menuCompra select {
+    width: 100%;
     padding: 10px;
     font-size: 16px;
+    border-radius: 5px;
     margin-top: 5px;
     margin-bottom: 15px;
+    border:1px solid #ccc ;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .btn-comprar {
+<<<<<<< HEAD
     
     background-color:#195656;
+=======
+    background-color: #24a8a1;
+>>>>>>> 1f2b9f56c8346eb12a757fae0f30d706637a3beb
     color: white;
     width: 100%;
-    padding:15px;
+    padding: 15px;
     border: none;
     cursor: pointer;
     font-size: 18px;
     border-radius: 5px;
     font-weight: bold;
-    
+
 }
 
 .btn-comprar:hover {
-    background-color: #555; 
+    background-color: #1c8c89;
+    transform:scale(1.02);
 }
-.contenedorDesComm{
-    display:flex;
+
+.contenedorDesComm {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: start;}
+    align-items: start;
+}
 
-.descripcionProducto{
-    
-    background:#24a8a1 ; 
+.descripcionProducto {
+
+    background: #1a8783;
     border-radius: 12px;
     padding: 20px;
-    max-width: 600px;
-    margin:20px auto auto 165px; 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
-    font-family: 'Arial', sans-serif; 
-    line-height: 1.6; 
-    color: white; 
+    max-width: 1000px;
+    margin: 40px auto auto 165px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: white;
+}
+.descripcionProducto2 {
+
+    background:#1a8783;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 40px auto auto 165px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: white;
+}
+.descripcionProducto3 {
+
+    background:#1a8783;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 40px auto auto 165px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: white;
+}
+.descripcionProducto3 h2 {
+    text-align: left;
+    color: #6cdcd2;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.descripcionProducto3 p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.descripcionProducto2 h2 {
+    text-align: left;
+    color: #6cdcd2;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.descripcionProducto2 p {
+    font-size: 16px;
+    text-align: justify;
 }
 
 .descripcionProducto h2 {
     text-align: left;
-    color:#6cdcd2; 
+    color: #6cdcd2;
     font-size: 24px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     margin-bottom: 15px;
 }
 
 .descripcionProducto p {
     font-size: 16px;
-    text-align: justify; 
+    text-align: justify;
 }
 
 
 
 .descripcionProducto p::after {
-    content: " 💪"; 
+    content: " 💪";
 }
-#titulosCommentarios{
-    text-align:center;
-    margin:auto;
+
+#titulosCommentarios {
+    text-align: center;
+    margin: auto;
     padding: 20px;
 }
 
-.comment{
-   background-color:#d1f6f0; 
-   color:#082a2b;
-   border-radius: 10px;
-   padding: 20px;
-   line-height: 1.6;
-   margin:20px auto 20px;
-   font-family: 'Arial', sans-serif; 
-   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-   max-width: 500px;
-   height: auto;
+.comment {
+    background-color: #d1f6f0;
+    color: #082a2b;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 1.6;
+    margin: 20px auto 20px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    height: auto;
 }
-.comment h3{
-    color:#333
-    
-    
 
- }
- #formComentario {
+.comment h3 {
+    color: #333
+}
+
+#containerComentario{
+    max-width: 600px;              
+    margin: 50px auto;             
+    padding: 20px;
+    background: #fff ;           
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
+}
+#containerComentario h2{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 28px;
+    color: #333;
+
+}
+#containerComentario p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+#formComentario {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+#formComentario label {
+    font-weight: 600;
+    color: #333;
+    display:flex;
+    align-items: center;
+    gap:8px;
 }
 
 #formComentario input,
 #formComentario textarea {
     width: 100%;
-    padding: 10px;
+    max-width: 500px;
+    padding: 12px;
+    font-size: 16px;
     border-radius: 8px;
     border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Al poner el cursor en el area del texto se sombrea el borde */
+#formComentario input:focus,
+#formComentario textarea:focus {
+    border-color: #24a8a1;
+    box-shadow: 0px 0px 8px rgba(36, 168, 161, 0.4);
+}
+
+#formComentario textarea {
+    resize: none;
+    min-height: 75px;
 }
 
 #formComentario button {
     background: #24a8a1;
     color: white;
     border: none;
-    padding: 10px;
+    font-size: 16px;
+    padding: 15px;
     border-radius: 8px;
     cursor: pointer;
     width: 100%;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    max-width: 500px;
 }
 
 #formComentario button:hover {
