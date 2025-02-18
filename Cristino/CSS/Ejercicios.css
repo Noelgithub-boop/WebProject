@@ -53,6 +53,10 @@
     display: block;
 }
 
+.objetivo #strenght a {
+    text-decoration: none;
+}
+
 .objetivo #strenght {
     background-image: url(/img/strenght.jpg);
 }

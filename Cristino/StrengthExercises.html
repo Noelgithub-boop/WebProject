@@ -4,59 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fit&Gear</title>
-    <link rel="stylesheet" href="./css/estructuraBasica.css">
-    <link rel="stylesheet" href="./css/PaginaPrincipal.css">
+    <title>Ejercicios</title>
+    <link rel="stylesheet" href="/css/estructuraBasica.css">
+    <link rel="stylesheet" href="./CSS/StrengthExercises.css">
 </head>
 
 <body>
     <Header>
+        <!--  Barra principal -->
         <div id="titulo">
-            <a href="./PaginaPrincipal.html"><img src="img/LogoFG.png" alt="logo" width="250px" height="auto"></a>
+            <a href="/PaginaPrincipal.html"><img src="/img/LogoFG.png" alt="logo" width="250px" height="auto"></a>
             <div id="busqueda">
                 <input type="search" name="buscador" id="buscador" size="50px" placeholder="Buscar producto">
                 <button>Buscar</button>
             </div>
             <div id="userdata">
                 <div id="login" onclick="logIn()">
-                    <img src="img/login.png" alt="login" width="30px" height="auto">
+                    <img src="/img/login.png" alt="login" width="30px" height="auto">
                     <p>Iniciar Sesión</p>
                 </div>
                 <div id="carrito">
-                    <img src="img/carrito.png" alt="carrito" width="30px" height="auto">
+                    <img src="/img/carrito.png" alt="carrito" width="30px" height="auto">
                     <p>Carrito</p>
                 </div>
             </div>
 
         </div>
+
         <div id="navegacion">
             <div id="bloqueA">
                 <div id="menu">
-                    <img src="img/categoria.png" alt="Categorías" width="20px" height="auto" id="caticon">
+                    <img src="/img/categoria.png" alt="Categorías" width="20px" height="auto" id="caticon">
                     <span id="cat">CATEGORÍAS</span>
                 </div>
                 <ul class="content">
-                    <li><a href="./Noel/Nutriciondeportiva.html">Nutrición Deportiva</a></li>
+                    <li><a href="/Noel/Nutriciondeportiva.html">Nutrición Deportiva</a></li>
                     <li><a href="##">Ropa Hombre</a></li>
                     <li><a href="##">Ropa Mujer</a></li>
                     <li><a href="##">Equipamiento</a></li>
-                    <li><a href="./Cristino/Ejercicios.html">Rutinas</a></li>
+                    <li><a href="./Ejercicios.html">Rutinas</a></li>
                 </ul>
             </div>
             <ul id="nav">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="/PaginaPrincipal.html">Inicio</a></li>
                 <li><a href="">Localización</a></li>
-                <li><a href="./Cristino/Ejercicios.html">Ejercicios</a></li>
+                <li><a href="./Ejercicios.html">Ejercicios</a></li>
             </ul>
+        </div>
     </Header>
     <main>
-        <img src="img/workout.jpg" alt="" width="100%">
+        <!--  Menu de logIn -->
         <section id="sesion">
             <div id="logBox">
                 <div id="close">
                     <button onclick="closeLogIn()">X</button>
                 </div>
-                <img src="img/logoFG1.png" alt="logo" width="250px" height="auto">
+                <img src="/img/logoFG1.png" alt="logo" width="250px" height="auto">
                 <div class="log">
                     <label for="usuario">Nombre de Usuario</label>
                     <input id="username" type="text" name="usuario"
@@ -71,35 +74,36 @@
                     <button class="logIn">Iniciar Sesión</button>
                 </div>
             </div>
-        </section>
-        <section>
-            <h1>Categorías</h1>
-            <div class="categorias">
-                <div class="container">
-                    <a href="./Noel/Nutriciondeportiva.html" class="container">
-                        <p>Nutrición Deportiva</p>
-                    </a>
+        <!-- Rutinas de cada grupo muscular -->
+        <section id="Entrenamientos">
+            <h1>Rutinas de Entrenamiento para Ganar Fuerza</h1>
+            <p>Ganar fuerza no solo se trata de levantar más peso, sino de construir una base sólida que te permita mejorar tu rendimiento físico, prevenir lesiones y optimizar tu composición corporal. En esta sección, encontrarás programas de entrenamiento diseñados para aumentar tu fuerza máxima, mejorar tu técnica y potenciar tu progreso en cada levantamiento. Ya seas principiante o avanzado, nuestras rutinas te ayudarán a superar tus límites y alcanzar tus objetivos. ¡Es hora de levantar con propósito y hacer que cada repetición cuente!</p>
+            <div id="ejercicios">
+                <div class="rutina">
+                    <h2>Tren Inferior</h2>
+                    <img src="/img/piernas.jpg" alt="">
+                    <a href="#" class="principiante">Nivel Principiante</a>
+                    <a href="" class="intermedio">Nivel Intermedio</a>
+                    <a href="" class="avanzado">Nivel Avanzado</a>
                 </div>
-                <div class="ropa">
-                    <div class="ropaHombre">
-                        <p>Ropa Hombre</p>
-                    </div>
-                    <div class="ropaMujer">
-                        <p>Ropa Mujer</p>
-                    </div>
+                <div class="rutina">
+                    <h2>Rutina Mancuernas</h2>
+                    <img src="/img/mancuernas.jpg" alt="">
+                    <a href="" class="principiante">Nivel Principiante</a>
+                    <a href="" class="intermedio">Nivel Intermedio</a>
+                    <a href="" class="avanzado">Nivel Avanzado</a>
                 </div>
-                <div class="container">
-                    <p>Equipamiento</p>
-                </div>
-                <div class="container">
-                    <p>Rutinas</p>
+                <div class="rutina">
+                    <h2>Pecho y Hombros</h2>
+                    <img src="/img/pecho.jpeg" alt="">
+                    <a href="" class="principiante">Nivel Principiante</a>
+                    <a href="" class="intermedio">Nivel Intermedio</a>
+                    <a href="" class="avanzado">Nivel Avanzado</a>
                 </div>
             </div>
         </section>
-        <section id="calculadoraCalorías">
-            
-        </section>
     </main>
+    <!-- Inicio footer -->
     <footer>
         <div class="g1">
             <div class="info">
@@ -127,8 +131,9 @@
             <small>&copy;2025 <b>Fit&Gear</b> - Todos los Derechos Reservados</small>
         </div>
     </footer>
+
     <!-- Enlace al documento JS -->
-    <script src="js/Proyecto.js"></script>
+    <script src="/js/Proyecto.js"></script>
     <!-- Importar iconos de fontawesome -->
     <script src="https://kit.fontawesome.com/56a598464a.js" crossorigin="anonymous"></script>
 </body>
