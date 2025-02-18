@@ -10,6 +10,28 @@
     padding: 100px 20px;
 
 }
+/* Imagen de paginas secundarias */
+.sectionPrincipalRopaHombre {
+    margin:0;
+    position: relative;
+    background-image: url(/img/imageshombre2.jpg);
+    background-size: contain;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 100px 20px;
+
+}
+.sectionPrincipalRopaMujer {
+    margin:0;
+    position: relative;
+    background-image: url(/img/images.avif);
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+
+}
+
 
 /* la medida ''rem'' coge el tamño de raiz del documento (root-em) */
 .principalNutricion h1 {
