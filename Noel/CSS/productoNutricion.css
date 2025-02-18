@@ -176,18 +176,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-<<<<<<< HEAD
-    margin:10px auto 25px 30px;
-}
-
-.etiqueta {
-    
-    background-color: #a3ede3 ;
-    padding:  10px;
-    border-radius: 10px;
-    font-size: 14px;
-    
-=======
     margin-bottom: 15px;
 }
 
@@ -198,7 +186,6 @@
     border-radius: 20px;
     font-size: 14px;
     font-weight: 500;
->>>>>>> 1f2b9f56c8346eb12a757fae0f30d706637a3beb
 }
 
 
@@ -223,12 +210,7 @@ label {
 }
 
 .btn-comprar {
-<<<<<<< HEAD
-    
-    background-color:#195656;
-=======
     background-color: #24a8a1;
->>>>>>> 1f2b9f56c8346eb12a757fae0f30d706637a3beb
     color: white;
     width: 100%;
     padding: 15px;
@@ -257,7 +239,7 @@ label {
     background: #1a8783;
     border-radius: 12px;
     padding: 20px;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 40px auto auto 165px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     font-family: 'Arial', sans-serif;
@@ -269,7 +251,7 @@ label {
     background:#1a8783;
     border-radius: 12px;
     padding: 20px;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 40px auto auto 165px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     font-family: 'Arial', sans-serif;
@@ -281,7 +263,7 @@ label {
     background:#1a8783;
     border-radius: 12px;
     padding: 20px;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 40px auto auto 165px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     font-family: 'Arial', sans-serif;
