@@ -31,6 +31,16 @@
     padding: 100px 20px;
 
 }
+.sectionPrincipalEquipamiento{
+    margin:0;
+    position: relative;
+    background-image: url(/img/equipamiento2.avif);
+    background-size: contain;
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+
+}
 
 
 /* la medida ''rem'' coge el tamño de raiz del documento (root-em) */
