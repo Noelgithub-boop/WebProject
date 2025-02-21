@@ -49,7 +49,7 @@ header {
 }
 
 #busqueda * {
-    padding: 10px;
+    line-height: 30px;
 }
 
 #userdata {

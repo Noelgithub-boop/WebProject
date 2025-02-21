@@ -1,3 +1,44 @@
+#portada {
+    margin-top: 0;
+}
+
+#portada div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 40vh;
+    margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1584116831289-e53912463c35?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#portada p {
+    font-size: 18pt;
+    color: white;
+    text-shadow: black 2px 2px 3px;
+    margin-bottom: 3%;
+    font-weight: 600;
+}
+
+#portada button{
+    background-color: #24a8a1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#portada button:hover {
+    background-color: #1a8783;
+    color: white;
+}
 
 #Entrenamientos h1, #Entrenamientos p {
     text-align: left;

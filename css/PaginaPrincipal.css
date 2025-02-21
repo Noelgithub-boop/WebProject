@@ -81,6 +81,50 @@
     cursor: pointer;
     color: white;
 }
+
+#calculadoraCalorias div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 40vh;
+    margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1494597564530-871f2b93ac55?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#calculadoraCalorias p {
+    margin-right: 50%;
+    font-size: 18pt;
+    color: white;
+    text-shadow: black 2px 2px 3px;
+    margin-bottom: 3%;
+    font-weight: 600;
+}
+
+#calculadoraCalorias a {
+    margin-right: 50%;
+}
+
+#calculadoraCalorias button{
+    background-color: #24a8a1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#calculadoraCalorias button:hover {
+    background-color: #1a8783;
+    color: white;
+}
+
 #sectionSlider{
     margin:50px 30px ;
 }
@@ -163,6 +207,4 @@
 .botonder:hover {
     background-color: rgba(0, 0, 0, 0.6);
     transform: translateY(-50%) scale(1.1);
-
-    
 }
