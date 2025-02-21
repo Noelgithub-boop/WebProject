@@ -60,7 +60,10 @@
     color: white;
 }
 .ropa a{
+    color:white;
     text-decoration: none;
+    text-align: center;
+    
 }
 
 .ropaHombre:hover {

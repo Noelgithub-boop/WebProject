@@ -1,48 +1,97 @@
-
 /* Encabezado Nutriciondeportiva */
 .sectionPrincipalNutricion {
-    margin:0;
+    margin: 0;
     position: relative;
-    background-image: url(/img/nutriciondeportiva.jpg);
+    background-image: url(/img/nuttry2.jpg);
     background-size: cover;
-    color: rgb(0, 0, 0);
-    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 100px 20px;
+    height: 350px;
+    width: auto;
+
 
 }
+
+.sectionPrincipalNutricion h1 {
+    font-size: 6rem !important;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+
+}
+
 /* Imagen de paginas secundarias */
 .sectionPrincipalRopaHombre {
-    margin:0;
+    margin: 0;
     position: relative;
-    background-image: url(/img/imageshombre2.jpg);
-    background-size: contain;
-    color: rgb(0, 0, 0);
-    text-align: center;
+    background-image: url(/img/headtry99.png);
+    background-size: cover;
+    
+
     padding: 100px 20px;
+    height: 350px;
+    width: auto;
 
 }
+.sectionPrincipalRopaHombre h1 {
+    font-size: 6rem !important;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+
+}
+
 .sectionPrincipalRopaMujer {
-    margin:0;
+    margin: 0;
     position: relative;
-    background-image: url(/img/images.avif);
+    background-image: url(/img/th.jpg);
     background-size: cover;
-    color: black;
-    text-align: center;
     padding: 100px 20px;
+    height: 350px;
+    width: auto;
 
 }
-.sectionPrincipalEquipamiento{
-    margin:0;
+.sectionPrincipalRopaMujer h1 {
+    font-size: 6rem !important;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+
+}
+
+
+.sectionPrincipalEquipamiento {
+    margin: 0;
     width: 100%;
-    ;
     position: relative;
-    background-image: url(/img/imagenprinci1.jpg);
+    background-image: url(/img/eqprueba3.jpg);
     background-size: cover;
-    color: black;
-    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 100px 20px;
+    width: auto;
+    height: 350px;
 
 }
+
+.sectionPrincipalEquipamiento h1 {
+    font-size: 6rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+
+
+}
+
 
 
 /* la medida ''rem'' coge el tamño de raiz del documento (root-em) */
@@ -115,6 +164,7 @@
     background-color: #3dc4bb;
     color: white;
 }
+
 /* Categorias NutricionDeportiva */
 
 .productos {
@@ -199,8 +249,8 @@
 }
 
 /*  INICIO CAROUSEL SLIDER */
-#sectionSlider{
-    margin:50px 30px ;
+#sectionSlider {
+    margin: 50px 30px;
 }
 
 
@@ -208,7 +258,7 @@
     position: relative;
     width: auto;
     height: 450px;
-    margin:0 auto;
+    margin: 0 auto;
     background-color: #e0e0e0;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 10px;
@@ -220,7 +270,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    transition:transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 
 
 }
@@ -228,11 +278,11 @@
 .sliderSection {
     min-width: 100%;
     height: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+
+
 }
 
 /* Imagenes contenidas en el slider */
@@ -241,7 +291,7 @@
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    
+
 }
 
 
@@ -261,7 +311,7 @@
     transform: translate(0, -50%);
     transition: 0.5s ease;
     user-select: none;
-    border:none;
+    border: none;
     align-items: center;
     justify-content: center;
     width: 40px;
@@ -282,15 +332,44 @@
     background-color: rgba(0, 0, 0, 0.6);
     transform: translateY(-50%) scale(1.1);
 
-    
+
 }
 
-.pulse:hover, 
+.pulse:hover,
 .pulse:focus {
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em transparent;
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+}
+
+.compraRapida {
+    background-color: #24a8a1;
+    color: #fff;
+    border: none;
+    padding: 20px 40px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.compraRapida:hover {
+    background-color: #196c6a;
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 var(--hover); }
+    0% {
+        box-shadow: 0 0 0 0 var(--hover);
+    }
+}
+
+.tituloProductos {
+    font-size: 2.5rem;
+    margin: 30px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 80px;
 }

@@ -1,5 +1,19 @@
 
 /*Categorias pag principal  */
+/* .imagenPrincipal{
+    margin: 0;
+    position: relative;
+    background-image: url(/img/imagenprinci2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    height: 300px;
+    width: auto;
+
+} */
+
+
 .categorias {
     display: flex;
     flex-wrap:wrap;
