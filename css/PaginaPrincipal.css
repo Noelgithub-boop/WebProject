@@ -110,3 +110,87 @@
     background-color: #1a8783;
     color: white;
 }
+
+#sectionSlider{
+    margin:50px 30px ;
+}
+
+
+.carouselContainer {
+    position: relative;
+    width: auto;
+    height: 600px;
+    margin:0 auto;
+    background-color: #e0e0e0;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.carruseles {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition:transform 0.5s ease-in-out;
+
+
+}
+
+.sliderSection {
+    min-width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+/* Imagenes contenidas en el slider */
+.sliderSection img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+
+.botonizq,
+.botonder {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* para que sea redondo el boton */
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transform: translate(0, -50%);
+    transition: 0.5s ease;
+    user-select: none;
+    border:none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.botonizq {
+    left: 10px;
+
+}
+
+.botonder {
+    right: 10px;
+}
+
+.botonizq:hover,
+.botonder:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translateY(-50%) scale(1.1);
+}
