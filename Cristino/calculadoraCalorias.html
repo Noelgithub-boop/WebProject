@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios</title>
     <link rel="stylesheet" href="/css/estructuraBasica.css">
-    <link rel="stylesheet" href="./CSS/StrengthExercises.css">
+    <link rel="stylesheet" href="./CSS/calculadoraCalorias.css">
 </head>
 
 <body>
@@ -42,13 +42,13 @@
                     <li><a href="##">Ropa Hombre</a></li>
                     <li><a href="##">Ropa Mujer</a></li>
                     <li><a href="##">Equipamiento</a></li>
-                    <li><a href="./Ejercicios.html">Rutinas</a></li>
+                    <li><a href="/Cristino/Ejercicios.html">Rutinas</a></li>
                 </ul>
             </div>
             <ul id="nav">
                 <li><a href="/PaginaPrincipal.html">Inicio</a></li>
                 <li><a href="">Localización</a></li>
-                <li><a href="./Ejercicios.html">Ejercicios</a></li>
+                <li><a href="/Cristino/Ejercicios.html">Ejercicios</a></li>
             </ul>
         </div>
     </Header>
@@ -75,41 +75,68 @@
                 </div>
             </div>
         </section>
-        <section id="portada">
-            <div>
-                <p>¡Potencia tu rendimiento y alcanza tus metas para construir <br>
-                    fuerza con nuestra línea de productos deportivos de alto rendimiento!</p>
-                <a href="/Noel/Nutriciondeportiva.html"><button>VER MÁS</button></a>
+        <section id="calculadoraCalorias">
+            <div id="titulo">
+                <h1>Calculadora de Calorías Diarias</h1>
+            </div>
+            <div id="box">
+                <form action="">
+                    <div id="columnedad">
+                        <label for="">Tu edad</label>
+                        <input type="number" placeholder="Introduce tu edad" id="edad">
+                    </div>
+                    <div class="flex">
+                        <div class="columnflex">
+                            <label for="">Introduce tu género</label>
+                            <select name="genero" id="genero">
+                                <option value="">Selecciona una opción</option>
+                                <option value="hombre">Hombre</option>
+                                <option value="mujer">Mujer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="column">
+                            <label for="">Tu peso</label>
+                            <input type="number" id="peso" placeholder="Introduce tu peso en kg">
+                        </div>
+                        <div class="column">
+                            <label for="">Tu altura</label>
+                            <input type="number" id="altura" placeholder="Introduce tu altura en cm">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="columnflex">
+                            <label for="">¿Cuál es tu nivel de actividad física diaria?</label>
+                            <select name="actividad" id="actividad">
+                                <option value="">Selecciona una opción</option>
+                                <option value="sedentario">Sedentario</option>
+                                <option value="ligera">Actividad ligera</option>
+                                <option value="moderada">Actividad moderada</option>
+                                <option value="intensa">Actividad intensa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="columnflex">
+                            <label for="">¿Cuál es tu objetivo principal?</label>
+                            <select name="objetivo" id="objetivo">
+                                <option value="">Selecciona una opción</option>
+                                <option value="ganarMasa">Ganar masa muscular</option>
+                                <option value="perderGrasa">Perder grasa</option>
+                                <option value="mantener">Mantenimiento</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="columnflex">
+                            <button onclick="calcularCalorias()">Calcular</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
-        <!-- Rutinas de cada grupo muscular -->
-        <section id="Entrenamientos">
-            <h1>Rutinas de Entrenamiento para Ganar Fuerza</h1>
-            <p>Ganar fuerza no solo se trata de levantar más peso, sino de construir una base sólida que te permita mejorar tu rendimiento físico, prevenir lesiones y optimizar tu composición corporal. En esta sección, encontrarás programas de entrenamiento diseñados para aumentar tu fuerza máxima, mejorar tu técnica y potenciar tu progreso en cada levantamiento. Ya seas principiante o avanzado, nuestras rutinas te ayudarán a superar tus límites y alcanzar tus objetivos. ¡Es hora de levantar con propósito y hacer que cada repetición cuente!</p>
-            <div id="ejercicios">
-                <div class="rutina">
-                    <h2>Tren Inferior</h2>
-                    <img src="/img/piernas.jpg" alt="">
-                    <a href="#" class="principiante">Nivel Principiante</a>
-                    <a href="" class="intermedio">Nivel Intermedio</a>
-                    <a href="" class="avanzado">Nivel Avanzado</a>
-                </div>
-                <div class="rutina">
-                    <h2>Rutina Mancuernas</h2>
-                    <img src="/img/mancuernas.jpg" alt="">
-                    <a href="" class="principiante">Nivel Principiante</a>
-                    <a href="" class="intermedio">Nivel Intermedio</a>
-                    <a href="" class="avanzado">Nivel Avanzado</a>
-                </div>
-                <div class="rutina">
-                    <h2>Pecho y Hombros</h2>
-                    <img src="/img/pecho.jpeg" alt="">
-                    <a href="" class="principiante">Nivel Principiante</a>
-                    <a href="" class="intermedio">Nivel Intermedio</a>
-                    <a href="" class="avanzado">Nivel Avanzado</a>
-                </div>
-            </div>
-        </section>
+
     </main>
     <!-- Inicio footer -->
     <footer>
@@ -140,8 +167,10 @@
         </div>
     </footer>
 
-    <!-- Enlace al documento JS -->
+    <!-- Enlace al documento JS LogIn -->
     <script src="/js/Proyecto.js"></script>
+    <!-- Enlace al documento JS Personalizado -->
+    <script src="JS/calculadora.js"></script>
     <!-- Importar iconos de fontawesome -->
     <script src="https://kit.fontawesome.com/56a598464a.js" crossorigin="anonymous"></script>
 </body>

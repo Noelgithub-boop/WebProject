@@ -1,0 +1,112 @@
+
+#calculadoraCalorias {
+    margin: 0;
+}
+
+#calculadoraCalorias #titulo {
+    height: 15vh;
+    background-color: #7bc5b3;
+}
+
+#calculadoraCalorias #titulo h1 {
+    font-size: 28pt;
+    margin: 0;
+}
+
+#calculadoraCalorias #box {
+    display: flex;
+    justify-content: center;
+}
+
+#calculadoraCalorias #box form {
+    text-align: left;
+    height: 550px;
+    width: 635.500px;
+    margin: 5%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#calculadoraCalorias #box form .flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#calculadoraCalorias #box form .column {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#calculadoraCalorias #box form .column label{
+    margin: 10px;
+    width: 200px;
+    line-height: 30px;
+    text-align: left;
+}
+
+#calculadoraCalorias #box form .column input{
+    margin: 10px 10px 10px 10px;
+    width: 200px;
+    line-height: 30px;
+    text-align: left;
+}
+
+#calculadoraCalorias #box form .columnflex {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.columnflex label, .columnflex select, .columnflex input{
+    width: 82%;
+    margin-right: 2%;
+    padding: 10px;
+}
+
+.columnflex button {
+    width: 82%;
+    padding: 10px;
+    margin: 5% 2% 0px 0px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    font-size: 14pt;
+}
+
+#columnedad {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#columnedad label {
+    margin-right: 167px;
+}
+
+#edad {
+    margin: 10px 10px 10px 310px;
+    width: 510px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.columnflex button {
+    cursor: pointer;
+}
+
+#calculadoraCalorias #box form .column input {
+    margin-left: 0;
+}
+
+#calculadoraCalorias #box form .column select {
+    width: 50%;
+}
